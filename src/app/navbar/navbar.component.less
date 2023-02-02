@@ -1,0 +1,60 @@
+//import styles.less to here
+@import "../../styles.less";
+
+header{
+    .flex_row();
+    width: @width;
+    margin: auto;
+    color: @green-soft;
+    font-size: @font-size-other;
+}
+
+ul{
+    .flex_row();
+}
+
+li{
+    .list_default_style();
+    margin: 2px;
+}
+
+img{
+    // para que no se desfiguren las imagenes solo les pongo altura y de esa manera se amoldan al contenedor
+    height: @img-default-other;
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        .flex_row();
+        font-size: @font-size-devices;
+    }
+    ul{
+        .flex_column();
+    }
+    li{
+        .list_default_style();
+    }
+    img{
+        // para que no se desfiguren las imagenes solo les pongo altura y de esa manera se amoldan al contenedor
+        height: @img-default-devices;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    header{
+        .flex_row();
+        font-size: @font-size-small-devices;
+    }
+    ul{
+        .flex_column();
+    }
+    li{
+        .list_default_style();
+    }
+    img{
+        // para que no se desfiguren las imagenes solo les pongo altura y de esa manera se amoldan al contenedor
+        height: @img-default-small-devices;
+    }
+}
+

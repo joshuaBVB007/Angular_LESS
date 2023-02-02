@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+// container configurations
+@width:100%;
+
+
+// img configurations
+@img-default-small-devices:60px;
+@img-default-devices:60px;
+@img-default-other:60px;
+
+
+// font sizes
+@font-size-small-devices:0.8em;
+@font-size-devices:1.2em;
+@font-size-other:1.2em;
+
+//colors
+@black-default:rgb(48, 48, 33);
+@green-soft:rgb(96, 231, 96);
+@white-soft:rgb(235, 211, 224);
+
+@font-face{
+    font-family: google;
+    src: url('../../angular_less/src/assets/fuentes/FuzzyBubbles-Regular.ttf')
+}
+
+body{
+    font-family: google;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list_default_style{
+    list-style-type: none;
+    font-weight: bold;
+}
+// mixins 
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
