@@ -4,9 +4,13 @@
 header{
     .flex_row();
     width: @width;
-    margin: auto;
-    color: @green-soft;
+    color: @black-default;
+    background-color: @white-soft;
     font-size: @font-size-other;
+}
+
+h1{
+    font-size: @font-size-devices;
 }
 
 ul{
@@ -15,7 +19,12 @@ ul{
 
 li{
     .list_default_style();
-    margin: 2px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+li:hover{
+    text-decoration: underline white solid 4px;
 }
 
 img{
@@ -34,6 +43,7 @@ img{
     }
     li{
         .list_default_style();
+        font-size: @font-size-small-devices;
     }
     img{
         // para que no se desfiguren las imagenes solo les pongo altura y de esa manera se amoldan al contenedor
