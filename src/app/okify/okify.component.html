@@ -1,0 +1,14 @@
+<p>okify works!</p>
+<div class="container">
+    <p>Puedes ingresar cualquier opcion de abajo</p>
+    <ul>
+        <li>Requested</li>
+        <li>Missing info</li>
+        <li>Processed</li>
+        <li>Activated</li>
+        <li>Canceled</li>
+    </ul>
+    <input type="text" [(ngModel)]="user_input" placeholder="ingresa los valores separados por comas">
+    <button (click)="validateInput(user_input)">Validate input</button>
+    <h1>{{ the_general_state }}</h1>
+</div>

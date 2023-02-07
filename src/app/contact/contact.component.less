@@ -1,0 +1,47 @@
+@import "../../styles.less";
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    // background-color: blue;
+}
+.popUp{
+    display:none;
+    margin:5% auto;
+    width: 40%;
+    background-color: @soft-orange;
+    border-radius:20px;
+}
+h1{
+    text-align: center;
+}
+.contact input{
+    display: block;margin: 10px auto;
+    width: 80%;padding: 10px;
+    font-size: 1.0em;
+    color: black;
+    text-align: center;
+    font-family: google,Georgia, 'Times New Roman', Times, serif;
+    border: solid 4px black;
+    border-radius: 20px;
+    outline: none;
+}
+::-webkit-input-placeholder{
+    color: black;
+    font-weight: bold;
+}
+button{
+    display: block;margin: auto;
+    background-color:@soft-orange;
+    color: black;
+    border-radius: 20px;
+    border: solid 4px black;
+    padding: 10px;
+    width: 100px;
+    font-family: google, Georgia, 'Times New Roman', Times, serif;
+    cursor:pointer;
+    font-size: 1.0em;font-weight: bold;
+}

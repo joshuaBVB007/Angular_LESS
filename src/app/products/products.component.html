@@ -1,1 +1,9 @@
-<p>products works!</p>
+<h1>I'm products!</h1>
+<div class="container">
+    <div class="item" *ngFor="let hero of items; let i=index;">
+        <h1 class="item_title">{{ hero.nombre }}</h1>
+        <img class="item_img" [src]="hero.img" alt="" srcset="">
+    </div>
+</div>
+
+
