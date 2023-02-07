@@ -78,7 +78,7 @@ export class OkifyComponent implements OnInit {
           this.the_general_state="PROCESSED";
 
       //The general task state is Activated only if all sub-states are Activated or Canceled.
-      }else if(this.missing_count==0 && this.processed_count==0 && this.canceled_count>=1 && this.activated_count>=1){
+      }else if(this.missing_count==0 && this.processed_count==0 && this.requested_count==0 && this.canceled_count>=1 && this.activated_count>=1){
           this.the_general_state="ACTIVATED";
 
       //In all other cases, the general task status is Requested.
