@@ -1,8 +1,10 @@
 <h1>I'm products!</h1>
 <div class="container">
     <div class="item" *ngFor="let hero of items; let i=index;">
-        <h1 class="item_title">{{ hero.nombre }}</h1>
         <img class="item_img" [src]="hero.img" alt="" srcset="">
+        <div class="overlay">
+            <h3>{{ hero.nombre }}</h3>
+        </div>
     </div>
 </div>
 
