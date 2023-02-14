@@ -24,6 +24,10 @@ import { OkifyComponent } from './okify/okify.component';
     FooterComponent,
     OkifyComponent,
   ],
+  exports:[
+    NavbarComponent,
+    FooterComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

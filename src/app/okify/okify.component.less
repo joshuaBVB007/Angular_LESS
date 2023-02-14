@@ -2,12 +2,22 @@
     display:flex;
     flex-direction:column;
     justify-content: center;
+    overflow-y: hidden;
     width:80%;
     margin: auto;
     background-color: yellow;
 }
-p,h1{
+p{
+    width: 100%;
+    margin:auto;
+    font-weight: bold;
     text-align: center;
+    font-size: medium;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
 }
 ul{
     width:80%;
@@ -35,4 +45,11 @@ button{
     margin: auto;
     font-weight: bold;
     font-family:google,Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width:768px){
+        .container{
+            width: 100%;
+        }   
 }
