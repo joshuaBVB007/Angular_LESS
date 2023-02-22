@@ -1,11 +1,13 @@
-<h1>I'm Contact!</h1>
-<form class="contact" [formGroup]="profileForm">
-    <input type="text" formControlName="name" placeholder="Nombre?">
-    <input type="text" formControlName="mail" placeholder="Email?">
-    <input type="text" formControlName="knowus" placeholder="How did you know us?">
-    <button 
-     [disabled]="!this.profileForm.valid"
-     (click)="SendTo()"
-    >{{ !this.profileForm.valid ? "Blank fields" : "Send" }}</button>
-</form> 
-<h1 class="popUp">Send it correctly</h1>
+<div class="principal">
+    <h1>I'm contact!</h1>
+    <form class="contact" [formGroup]="profileForm">
+        <input type="text" formControlName="name" placeholder="Nombre?">
+        <input type="text" formControlName="mail" placeholder="Email?">
+        <input type="text" formControlName="knowus" placeholder="How did you know us?">
+        <button 
+        [disabled]="!this.profileForm.valid"
+        (click)="SendTo()"
+        >{{ !this.profileForm.valid ? "Blank fields" : "Send data" }}</button>
+    </form> 
+    <h1 class="popUp">Send it correctly</h1>
+</div>

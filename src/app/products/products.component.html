@@ -1,9 +1,10 @@
-<h1>I'm products!</h1>
-<div class="container">
-    <div class="item" *ngFor="let hero of items; let i=index;">
-        <img class="item_img" [src]="hero.img" alt="" srcset="">
-        <div class="overlay">
-            <h3>{{ hero.nombre }}</h3>
+<div class="principal">
+    <h1>I'm products!</h1>
+    <div class="container">
+        <div class="item" *ngFor="let hero of items; let i=index;">
+            <img class="item_img" [src]="hero.img" alt="articulos de fruta" srcset="">
+            <h3 class="header_first">{{ hero.nombre }}</h3>
+            <h3 class="header_second">{{ hero.precio }}</h3>
         </div>
     </div>
 </div>

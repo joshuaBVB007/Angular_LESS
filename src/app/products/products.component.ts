@@ -8,17 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   items:any=[
-    {nombre:"Açaí",img:"../../assets/products/açai.jpeg"},
-    {nombre:"Banana",img:"../../assets/products/banana.jpeg"},
-    {nombre:"Cereza",img:"../../assets/products/cereza.jpeg"},
-    // {nombre:"Manzana verde",img:"../../assets/products/mverde.jpeg"},
-    {nombre:"Melocotón",img:"../../assets/products/melocoton.jpeg"},
-    {nombre:"Piña",img:"../../assets/products/piña.jpeg"},
+    {nombre:"Açaí",precio:"1€",img:"../../assets/products/açai.jpeg"},
+    {nombre:"Banana",precio:"1€",img:"../../assets/products/banana.jpeg"},
+    {nombre:"Cereza",precio:"1€",img:"../../assets/products/cereza.jpeg"},
+    {nombre:"Melocotón",precio:"1€",img:"../../assets/products/melocoton.jpeg"},
+    {nombre:"Piña",precio:"1€",img:"../../assets/products/piña.jpeg"},
+    {nombre:"Fresa",precio:"1€",img:"../../assets/products/fresa.jpeg"},
   ]
 
+  title="soy tooltip";
+  imred=true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeRed(dato:any){
+    console.log(dato);
+    this.imred=!this.imred;
   }
 
 }

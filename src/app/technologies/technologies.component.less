@@ -1,0 +1,29 @@
+@import "../../styles.less";
+
+div{
+    width: 100%;
+    margin: auto;
+    font-size: @font-size-other;
+    .flex_column();
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: @font-size-devices;
+    width:40%;
+}
+
+img{
+    width:10%;
+}
+
+@media screen and (max-width:768px){
+    p{
+        font-size: @font-size-devices;
+        width:80%;
+    }
+    img{
+        width:40%;
+    }
+}

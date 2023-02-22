@@ -1,6 +1,11 @@
 @import "../../styles.less";
 
-
+.principal{
+    font-size:@font-size-other;
+}
+h1{
+    text-align:center;
+}
 .contact{
     .flex_column();
     width: 60%;
@@ -10,19 +15,17 @@
     display:none;
     margin:5% auto;
     width: 40%;
-    background-color: @soft-orange;
+    font-size: @font-size-devices;
+    background-color: @soft-green;
     border-radius:20px;
 }
-h1{
-    text-align: center;
-}
 .contact input{
-    display: block;margin: 10px auto;
-    width: 80%;padding: 10px;
-    font-size: 1.0em;
-    color: black;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
     text-align: center;
-    font-family: google,Georgia, 'Times New Roman', Times, serif;
+    font-family: google,Arial, Helvetica, sans-serif;
     border: solid 4px black;
     border-radius: 20px;
     outline: none;
@@ -30,16 +33,18 @@ h1{
 ::-webkit-input-placeholder{
     color: black;
     font-weight: bold;
+    text-align: center;
+    font-family: google,Arial, Helvetica, sans-serif;
 }
 button{
-    display: block;margin: auto;
-    background-color:@soft-orange;
-    color: black;
-    border-radius: 20px;
+    display: block;
+    margin: auto;
+    background-color:@soft-green;
+    padding: 8px;
     border: solid 4px black;
-    padding: 10px;
-    width: 100px;
-    font-family: google, Georgia, 'Times New Roman', Times, serif;
-    cursor:pointer;
-    font-size: 1.0em;font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    font-family: google,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }

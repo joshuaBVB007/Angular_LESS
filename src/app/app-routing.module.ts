@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'products', component:ProductsComponent},
   {path: 'location', component:LocationComponent},
   {path: 'okify', component: OkifyComponent},
-  {path: 'technologies', component:TechnologiesComponent}
+  {path: 'tech', component:TechnologiesComponent}
 ];
 
 @NgModule({

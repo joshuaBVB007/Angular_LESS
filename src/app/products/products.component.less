@@ -1,14 +1,16 @@
 @import "../../styles.less";
-// example of how to add Escaping
-@min768: ~"(max-width: 768px)";
 
-h1,h3{
+.principal{
+    width: 100%;
+    font-size: @font-size-other;
+}
+h1{
     text-align: center;
 }
 .container{
     .flex_row();
     justify-content:center;
-    width: 50%;
+    width: 60%;
     margin: auto;
 
     .item{
@@ -18,26 +20,19 @@ h1,h3{
             height:auto;
             border-radius: 25px;
         }
-        .overlay{
-            .flex_column();
+        .header_first{
+            background-color: white;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0; 
-            // transition: .10s ease;
-            background-color: @soft-green;
-            border-radius: 25px;   
-            @media @min768{
-                background-color: yellow;
-            }   
+            top: 0px;
+            padding: 4px;
+            font-size: @font-size-devices;
+        }
+        .header_second{
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            padding: 4px;
+            font-size: @font-size-devices;
         }
     }
-    .item:hover .overlay {
-        opacity: 0.8;
-    } 
 }
-
